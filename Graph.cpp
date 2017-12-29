@@ -1,9 +1,5 @@
 #include "Graph.h"
 
-Graph::Graph() {
-	//Nothing.
-}
-
 Graph::Graph(unsigned int numVertices) {
 	for (unsigned int i = 0; i < numVertices; i++) {
 		addVertex();

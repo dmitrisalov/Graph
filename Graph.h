@@ -11,11 +11,6 @@
 class Graph {
 	public:
 		/**
-		 * Default constructor. Creates an empty graph.
-		 */
-		Graph();
-		
-		/**
 		 * Parameter constructor.
 		 *
 		 * @param numVertices The number of the vertices to be in the graph.
