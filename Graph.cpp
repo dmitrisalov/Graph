@@ -3,6 +3,7 @@
 Graph::Graph(unsigned int numVertices) {
 	for (unsigned int i = 0; i < numVertices; i++) {
 		addVertex();
+		vertexLabels.push_back("");
 	}
 }
 
@@ -47,6 +48,14 @@ std::vector<Vertex> Graph::getAdjacent(Vertex vertex) const {
 
 Edge & Graph::getEdge(Vertex start, Vertex end) {
 	return *(adjacency[start][end]);
+}
+
+void Graph::setVertexLabel(Vertex vertex, std::string label) {
+	vertexLabels[vertex] = label;
+}
+
+std::string Graph::getVertexLabel(Vertex vertex) const {
+	return vertexLabels[vertex];
 }
 
 unsigned int Graph::size() const {

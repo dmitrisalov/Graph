@@ -3,6 +3,7 @@
 
 #include "Edge.h"
 #include <vector>
+#include <string>
 
 /**
  * Weighted graph representation using an adjacency matrix.
@@ -52,6 +53,21 @@ class Graph {
 		Edge & getEdge(Vertex start, Vertex end);
 		
 		/**
+		 * Sets the label for a vertex.
+		 *
+		 * @param vertex The vertex to be labeled.
+		 * @param label The label for the vertex.
+		 */
+		void setVertexLabel(Vertex vertex, std::string label);
+		
+		/**
+		 * Gets the label of a vertex.
+		 *
+		 * @param vertex The vertex to get the label from.
+		 */
+		std::string getVertexLabel(Vertex vertex) const;
+		
+		/**
 		 * Returns the size of the graph.
 		 *
 		 * @return The number of vertices.
@@ -60,6 +76,7 @@ class Graph {
 		
 	private:
 		std::vector<std::vector<Edge *>> adjacency;	//Adjacency matrix.
+		std::vector<std::string> vertexLabels;	//Holds labels for vertices.
 		
 		Edge *INVALID_EDGE = new Edge(-1, -1, -1);
 };

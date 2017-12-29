@@ -20,7 +20,7 @@ int main() {
 	cout << endl;
 	
 	//Graph class testing.
-	Graph *g1 = new Graph();
+	Graph *g1 = new Graph(1);
 	Graph *g2 = new Graph(10);
 	
 	vector<Graph *> graphs;
@@ -30,6 +30,11 @@ int main() {
 	for (Graph *graph : graphs) {
 		cout << "Graph size: " << graph->size() << " vertices" << endl;
 	}
+	
+	cout << endl;
+	
+	g2->setVertexLabel(6, "test label");
+	cout << "Label (6): " << g2->getVertexLabel(6) << endl;
 	
 	cout << endl;
 	
