@@ -1,5 +1,5 @@
 # Graph
-Created by Dmitri Salov, 2017-2018.
+Created by Dmitri Salov, 2018.
 
 Description
 ----------------------
