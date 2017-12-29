@@ -12,4 +12,4 @@ Feel free to play around with 'test.cpp' to get a better idea of how Graph works
 
 Documentation
 ----------------------
-Here will eventually be a link to some documentation for the class.
+https://dmitrisalov.github.io/Graph/annotated.html
