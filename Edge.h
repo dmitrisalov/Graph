@@ -14,11 +14,6 @@ class Edge {
 		int weight;
 		
 		/**
-		 * Default constructor.
-		 */
-		Edge();
-		
-		/**
 		 * Parameter constructor.
 		 *
 		 * @param start The beginning vertex of the edge.
@@ -26,6 +21,6 @@ class Edge {
 		 * @param weight The weight of the edge.
 		 */
 		Edge(Vertex start, Vertex end, int weight);
-}
+};
 
 #endif
